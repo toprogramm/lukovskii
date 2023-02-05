@@ -1,0 +1,23 @@
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Rambla";
+  font-style: normal;
+  font-weight: 400;
+  src: local("../fonts/rambla-v13-latin-regular.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+      local("../fonts/rambla-v13-latin-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 2em;
+  width: auto;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  border-radius: 0.2em;
+  margin-bottom: 0.2em;
+  color: #005025;
+  background-color: #d9d9d9;
+  font-size: 20px;
+}
