@@ -153,3 +153,29 @@ const jobsCount = [
     },
   },
 ];
+
+const JobExperimental =(props: any) => {
+  const result = jobsCount.map(function(item) {
+  return(
+  <ContentBox orientationVariant={OrientationVariant.other}>
+    <div className="vacancy">
+      <h4 className="greenText">
+        <b>{item.position.ru}</b>
+      </h4>
+      <h5 className="greyText">{item.period.ru}</h5>
+      <ul className="job">
+        <li>
+          {item.achivements.ru}
+        </li>
+        
+      </ul>
+    </div>
+  </ContentBox>)
+   
+});
+return result
+}
+const JobsFinal = () => {
+  return (<JobExperimental />)
+}
+export default JobsFinal
