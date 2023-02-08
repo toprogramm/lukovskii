@@ -1,40 +1,66 @@
-import React , { FC } from "react";
+import React, { FC } from "react";
 import "./Jobs.scss";
 import ContentBox from "../../ContentBox/ContentBox";
 import { OrientationVariant } from "../../ContentBox/ContentBox";
 
-interface JobsProps {
-  children: JSX.Element | JSX.Element[];
-}
 
-const Jobs: FC<JobsProps> = () => {
+const Jobs = () => {
   return (
-  <ContentBox orientationVariant={OrientationVariant.other}>
-    <div className="vacancy">
-      <h4 className="greenText">
-        <b>Front End Developer</b>
-      </h4>
-      <h5 className="greyText">«Hi Psy» LLC| январь 2021 — июль 2021</h5>
-      <ul className="job">
-        <li>
-          Участие в разработке дизайна и принятии окончательного решения
-        </li>
-        <li>Создан корпоративный сайт для этой компании.</li>
-        <li>Подбор оптимального технологического решения для разработки</li>
-      </ul>
-    </div>
-  </ContentBox>
+    <>
+      {jobHistory.map((item, index) => {
+        if (userLang == "ru") {
+          return (
+            <ContentBox orientationVariant={OrientationVariant.other}>
+              <div className="vacancy"key={index}>
+                <h4 className="greenText">
+                  <b>{item.position.ru}</b>
+                </h4>
+                <h5 className="greyText">Компания: {item.company.ru}</h5>
+                <h5 className="greyText">{item.period.ru}</h5>
+                <ul className="job">
+                  {item.achivements.ru.map((item1) => {
+                    return <li>{item1}</li>;
+                  })}
+                </ul>
+              </div>
+            </ContentBox>
+          );
+        } else {
+          return (
+            <ContentBox orientationVariant={OrientationVariant.other}>
+              <div className="vacancy" key={index}>
+                <h4 className="greenText">
+                  <b>{item.position.en}</b>
+                </h4>
+                <h5 className="greyText">Company: {item.company.en}</h5>
+                <h5 className="greyText">{item.period.en}</h5>
+                <ul className="job">
+                  {item.achivements.en.map((item1) => {
+                    return <li>{item1}</li>;
+                  })}
+                </ul>
+                <>{console.log(navigator.language)}</>
+              </div>
+            </ContentBox>
+          );
+        }
+      })}
+    </>
+  );
+};
 
-  )
-}
+export const userLang = navigator.language ==  "ru-RU" ? "ru" : "en";
 
-
-const jobsCount = [
+const jobHistory = [
   {
     position: { ru: "Front End Developer", en: "Front End Developer" },
+    company: {
+      ru: "«Hi Psy» LLC",
+      en: "«Hi Psy» LLC",
+    },
     period: {
-      ru: "«Hi Psy» LLC| Январь 2021 — Июль 2021",
-      en: "«Hi Psy» LLC| January 2021 — July 2021",
+      ru: "Январь 2021 — Июль 2021",
+      en: "January 2021 — July 2021",
     },
     achivements: {
       ru: [
@@ -51,9 +77,13 @@ const jobsCount = [
   },
   {
     position: { ru: "Front End Developer", en: "Front End Developer" },
+    company: {
+      ru: "«STRADA»",
+      en: "«STRADA»",
+    },
     period: {
-      ru: "«STRADA» | Январь 2022 - Декабрь 2022",
-      en: "«STRADA» | January 2022 - December 2022",
+      ru: "Январь 2022 - Декабрь 2022",
+      en: "January 2022 - December 2022",
     },
     achivements: {
       ru: [
@@ -70,9 +100,13 @@ const jobsCount = [
   },
   {
     position: { ru: "Разработчик Python", en: "Python Developer" },
+    company: {
+      ru: "«BIP39»",
+      en: "«BIP39»",
+    },
     period: {
-      ru: "«BIP39» | Август 2022 - Настоящее время",
-      en: "«BIP39» | August 2022 - Present",
+      ru: "Август 2022 - Настоящее время",
+      en: "August 2022 - Present",
     },
     achivements: {
       ru: [
@@ -90,9 +124,13 @@ const jobsCount = [
       ru: "Flutter Разработчик, Системный и Социальный Дизайнер",
       en: "Flutter Developer, System and Social Designer",
     },
+    company: {
+      ru: "«Image Language»",
+      en: "«Image Language»",
+    },
     period: {
-      ru: "«Image Language» | Ноябрь 2022 - Настоящее время",
-      en: "«Image Language» | November 2022 - Present",
+      ru: "Ноябрь 2022 - Настоящее время",
+      en: "November 2022 - Present",
     },
     achivements: {
       ru: [
@@ -112,9 +150,13 @@ const jobsCount = [
       ru: "Технический Директор (CTO)",
       en: "Chief Technology Officer (CTO)",
     },
+    company: {
+      ru: "«Павличенко» ООО",
+      en: "«Pavlichenko» LLC",
+    },
     period: {
-      ru: "«Павличенко» ООО| Февраль 2017 - Настоящее время",
-      en: "«Pavlichenko» LLC| February 2017 - Present",
+      ru: "Февраль 2017 - Настоящее время",
+      en: "February 2017 - Present",
     },
     achivements: {
       ru: [
@@ -135,9 +177,13 @@ const jobsCount = [
       ru: "Технический Директор (CTO), IT-инженер",
       en: "Chief Technology Officer (CTO), IT Engineer",
     },
+    company: {
+      ru: "«Мидгалэль» ООО",
+      en: "«Midgalel» LLC",
+    },
     period: {
-      ru: "«Мидгалэль» ООО | Январь 2013 - Январь 2017",
-      en: "«Midgalel» LLC | January 2013 - January 2017",
+      ru: "Январь 2013 - Январь 2017",
+      en: "LLC | January 2013 - January 2017",
     },
     achivements: {
       ru: [
@@ -154,28 +200,4 @@ const jobsCount = [
   },
 ];
 
-const JobExperimental =(props: any) => {
-  const result = jobsCount.map(function(item) {
-  return(
-  <ContentBox orientationVariant={OrientationVariant.other}>
-    <div className="vacancy">
-      <h4 className="greenText">
-        <b>{item.position.ru}</b>
-      </h4>
-      <h5 className="greyText">{item.period.ru}</h5>
-      <ul className="job">
-        <li>
-          {item.achivements.ru}
-        </li>
-        
-      </ul>
-    </div>
-  </ContentBox>)
-   
-});
-return result
-}
-const JobsFinal = () => {
-  return (<JobExperimental />)
-}
-export default JobsFinal
+export default Jobs;
