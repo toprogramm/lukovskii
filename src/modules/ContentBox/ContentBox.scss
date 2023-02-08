@@ -1,13 +1,43 @@
 .ContentBox {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5em 1.5em 1.5em 1.5em;
-  width: auto;
-  height: 400px;
+  max-width: 800px;
+  height: auto;
   border-radius: 1em;
-  background-image: url("../../assets/background.jpg");
   background-position: center center;
   background-size: cover;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+.contentBoxImage {
+  background-image: url("./background.jpg");
+  background-position: bottom;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  background-size: cover;
+  &__vertical {
+    background-image: url("./background90.jpg");
+    background-position: bottom;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.15;
+    background-size: cover;
+  }
+}
+.contextBoxChildren {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  position: relative;
+  width: auto;
+  height: auto;
+  padding: 0.5em 0.5em 1em 1em;
+  opacity: 1;
+  align-items: center;
 }

@@ -1,25 +1,18 @@
-import { FC } from 'react';
-import './TextField.scss'
-export enum TextColorVariant {
-    usual = 'usual',
-    white = 'white',
-    green = 'green',
-
-}
-
+import React, { FC } from "react";
+import "./TextField.scss";
 interface TextProps {
-    name: string
-    textColorVariant: TextColorVariant,
+  children: JSX.Element | JSX.Element[];
 }
 
-const TextField: FC<TextProps> = ({ name, textColorVariant }) => {
-    return (
-        <div className="TextField" style={{
-            color: textColorVariant === TextColorVariant.white ? "#ffffff" : TextColorVariant.usual ? "#000000" : TextColorVariant.green ? "#005025" : "#f6f6f6"
-        }}>
-            {name}
-        </div>
-    )
-}
+const TextField: FC<TextProps> = ({  children }) => {
+  return (
+    <div
+      className="TextField"
+      
+    >
+      {children}
+    </div>
+  );
+};
 
-export default TextField
+export default TextField;

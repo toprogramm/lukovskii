@@ -1,27 +1,34 @@
-import { FC } from 'react';
-import './Button.scss'
+import { FC } from "react";
+import "./Button.scss";
 export enum ColorVariant {
-  usual = 'usual',
-  black = 'black',
+  usual = "usual",
+  black = "black",
 }
 export enum ShadowVariant {
-  usual = 'usual',
-  none = 'none'
+  usual = "usual",
+  none = "none",
 }
 interface ButtonProps {
-  name: JSX.Element
-  colorVariant: ColorVariant
-  shadowVariant: ShadowVariant
+  colorVariant: ColorVariant;
+  shadowVariant: ShadowVariant;
+  children: JSX.Element | JSX.Element[];
 }
 
-const Button: FC<ButtonProps> = ({ name, colorVariant, shadowVariant }) => {
-
+const Button: FC<ButtonProps> = ({ colorVariant, shadowVariant, children }) => {
   return (
-    <div className="Button" style={{
-      backgroundColor: colorVariant === ColorVariant.usual ? "#005025" : "rgba(0, 0, 0, 0.75)",
-      boxShadow: shadowVariant === ShadowVariant.usual ? "3px 3px 3px #00000050" : "none",
-    }}>{name}
-    </div>
-  )
-}
-export default Button
+    <button
+      className={
+        colorVariant === ColorVariant.usual ? "Button" : "Button Button__black"
+      }
+      style={{
+        boxShadow:
+          shadowVariant === ShadowVariant.usual
+            ? "3px 3px 3px #00000050"
+            : "none",
+      }}
+    >
+      {children}
+    </button>
+  );
+};
+export default Button;

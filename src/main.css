@@ -1,15 +1,46 @@
 h1 {
   font-size: 30px;
+
 }
 h3 {
   font-size: 20px;
+
 }
 h4 {
   font-size: 18px;
+
 }
 h5 {
   font-size: 16px;
+
 }
 h6 {
   font-size: 14px;
+
+}
+b {
+  font-weight: bold;
+}
+
+.whiteText{
+  color:white;
+}
+.blackText{
+  color: black;
+}
+.greenText{
+  color:#005025;
+}
+.greyText{
+  color: #626262;
+}
+button{
+  border:none
+}
+button:active, button:focus {
+  border: none;
+  outline: none !important;
+}
+button::-moz-focus-inner {
+  border: none !important;
 }

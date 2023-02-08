@@ -1,11 +1,12 @@
-import './Header.scss'
+import "./Header.scss";
 
 function Header() {
-
-
-    return (
-        <div className="Header"><img src='./burger.svg'></img><div>LUKOVSKii</div><img src='./share.svg'></img>
-        </div>
-    )
+  return (
+    <div className="Header">
+      <img src="./burger.svg"></img>
+      <div>LUKOVSKii</div>
+      <img src="./share.svg"></img>
+    </div>
+  );
 }
-export default Header
+export default Header;

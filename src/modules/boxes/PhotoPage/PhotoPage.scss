@@ -1,0 +1,11 @@
+.buttonField {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.photoPage {
+  &__textField {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+}

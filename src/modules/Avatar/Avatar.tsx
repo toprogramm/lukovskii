@@ -1,11 +1,6 @@
-import './Avatar.scss'
+import "./Avatar.scss";
 
 function Avatar() {
-
-
-    return (
-        <div className="Avatar">
-        </div>
-    )
+  return <div className="Avatar"></div>;
 }
-export default Avatar
+export default Avatar;
