@@ -9,6 +9,7 @@ import "./Contacts.scss";
 const Contacts = () => {
   return (
     <div className="Contacts">
+      <div className="contactCenter">
       <ContentBox orientationVariant={OrientationVariant.other}>
         <div className="contactPad">
           <h4 className="greenText">
@@ -33,6 +34,7 @@ const Contacts = () => {
           </div>
         </div>
       </ContentBox>
+      </div>
     </div>
   );
 };
