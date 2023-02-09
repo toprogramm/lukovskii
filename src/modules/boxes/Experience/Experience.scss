@@ -1,22 +1,41 @@
-.Experience{
-  width:100%
-}
-.vacancy{
-  width: 100%;
-  margin-top:8px;
-  word-wrap: break-word;
-  text-align: start;
-}
-.job{
-  width: 100%;
+.Experience {
   display: flex;
-  margin-top: 7px;
-  flex-direction:column;
-  word-wrap: break-word;
-  text-align: start;
-  gap:0.5em;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap:8px;
 }
-.marker ::marker{
+.experienceWord{
+  display: flex;
+  justify-content: center;
+  width: 450px;
+}
+.Experience:first-child {
+  display: flex;
+  flex-direction: column;
+}
+.vacancy {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 364px; 
+  margin-top: 8px;
+  text-align: start;
+  gap:0.2em;
+  @media (max-width:500px) {
+    width: 353px;
+    
+  }
+}
+.job {
+  display: flex;
+  word-wrap: break-word;
+  margin-top: 7px;
+  flex-direction: column;
+  text-align: start;
+  gap: 0.5em;
+  }
+.marker ::marker {
   display: list-item;
   list-style-type: "!!!!";
   padding-inline-start: 1ch;
@@ -28,6 +47,4 @@ li::before {
   padding-inline: 0.5ch;
   margin-inline-end: 0.5ch;
 }
-.smallMarginBottom{
-  margin-bottom: 8px;
-}
+

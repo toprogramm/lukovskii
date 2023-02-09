@@ -5,12 +5,13 @@
   align-items: center;
   justify-content: space-between;
   max-width: 800px;
-  height: auto;
+  height: 100%;
   border-radius: 1em;
   background-position: center center;
   background-size: cover;
   overflow: hidden;
   margin-bottom: 8px;
+
 }
 .contentBoxImage {
   background-image: url("./background.jpg");
@@ -37,7 +38,7 @@
   position: relative;
   width: auto;
   height: auto;
-  padding: 0.5em 0.5em 1em 1em;
+  padding: 0.5em 0.5em 0.8em 1em;
   opacity: 1;
   align-items: center;
 }

@@ -3,45 +3,48 @@ import "./Jobs.scss";
 import ContentBox from "../../ContentBox/ContentBox";
 import { OrientationVariant } from "../../ContentBox/ContentBox";
 
-
 const Jobs = () => {
   return (
     <>
       {jobHistory.map((item, index) => {
         if (userLang == "ru") {
           return (
-            <ContentBox orientationVariant={OrientationVariant.other}>
-              <div className="vacancy"key={index}>
-                <h4 className="greenText">
-                  <b>{item.position.ru}</b>
-                </h4>
-                <h5 className="greyText">Компания: {item.company.ru}</h5>
-                <h5 className="greyText">{item.period.ru}</h5>
-                <ul className="job">
-                  {item.achivements.ru.map((item1) => {
-                    return <li>{item1}</li>;
-                  })}
-                </ul>
-              </div>
-            </ContentBox>
+            <div className="jobsCase">
+              <ContentBox orientationVariant={OrientationVariant.other}>
+                <div className="vacancy job" key={index}>
+                  <h4 className="greenText">
+                    <b>{item.position.ru}</b>
+                  </h4>
+                  <h5 className="greyText job">Компания: {item.company.ru}</h5>
+                  <h5 className="greyText">{item.period.ru}</h5>
+                  <ul className="job">
+                    {item.achivements.ru.map((item1) => {
+                      return <li>{item1}</li>;
+                    })}
+                  </ul>
+                </div>
+              </ContentBox>
+            </div>
           );
         } else {
           return (
-            <ContentBox orientationVariant={OrientationVariant.other}>
-              <div className="vacancy" key={index}>
-                <h4 className="greenText">
-                  <b>{item.position.en}</b>
-                </h4>
-                <h5 className="greyText">Company: {item.company.en}</h5>
-                <h5 className="greyText">{item.period.en}</h5>
-                <ul className="job">
-                  {item.achivements.en.map((item1) => {
-                    return <li>{item1}</li>;
-                  })}
-                </ul>
-                <>{console.log(navigator.language)}</>
-              </div>
-            </ContentBox>
+            <div className="jobsCase">
+              <ContentBox orientationVariant={OrientationVariant.other}>
+                <div className="vacancy" key={index}>
+                  <h4 className="greenText">
+                    <b>{item.position.en}</b>
+                  </h4>
+                  <h5 className="greyText">Company: {item.company.en}</h5>
+                  <h5 className="greyText">{item.period.en}</h5>
+                  <ul className="job">
+                    {item.achivements.en.map((item1) => {
+                      return <li>{item1}</li>;
+                    })}
+                  </ul>
+                  <>{console.log(navigator.language)}</>
+                </div>
+              </ContentBox>
+            </div>
           );
         }
       })}
@@ -49,7 +52,7 @@ const Jobs = () => {
   );
 };
 
-export const userLang = navigator.language ==  "ru-RU" ? "ru" : "en";
+export const userLang = navigator.language == "ru-RU" ? "ru" : "en";
 
 const jobHistory = [
   {
@@ -174,8 +177,8 @@ const jobHistory = [
   },
   {
     position: {
-      ru: "Технический Директор (CTO), IT-инженер",
-      en: "Chief Technology Officer (CTO), IT Engineer",
+      ru: "Технический Директор (CTO), \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0  IT-Инженер",
+      en: "Chief Technology Officer (CTO), \u00A0 \u00A0 \u00A0 \u00A0 \u00A0  \u00A0 \u00A0 IT-Engineer",
     },
     company: {
       ru: "«Мидгалэль» ООО",
