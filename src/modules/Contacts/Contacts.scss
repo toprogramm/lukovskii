@@ -1,0 +1,64 @@
+.Contacts{
+  width: 387px;
+  margin-top: 8px;
+  
+}
+
+.contactPad{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap:8px;
+  
+}
+.iconBoard{
+  display: flex;
+  justify-content: space-between;
+  gap:8px
+}
+.contactIcon {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+  width: 55px;
+  background-color: #ffffff;
+  border-radius: 3em;
+  overflow: hidden;
+  box-shadow: 3px 3px 3px #00000060;
+}
+.icon{
+  height: 45px;
+  width: 45px;
+  
+}
+svg #linkedIn {
+  fill: #1B1F23;
+}
+svg :hover #linkedIn  {
+  fill: #005025;
+}
+/*MingCute from linkedIn to*/
+svg #MingCute{
+  fill:white; 
+}
+svg  #github{
+  fill:#1B1F23;
+}
+
+
+svg  #telegram{
+  fill:#1B1F23;
+}
+
+
+svg  #website{
+  fill:#1B1F23;
+}
+svg :hover {
+  fill:#005025;
+  
+}
+
+
