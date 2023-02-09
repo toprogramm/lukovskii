@@ -14,7 +14,7 @@
 
 }
 .contentBoxImage {
-  background-image: url("./background.jpg");
+  background-image: url("../../assets/background.jpg");
   background-position: bottom;
   position: absolute;
   width: 100%;
@@ -22,7 +22,7 @@
   opacity: 1;
   background-size: cover;
   &__vertical {
-    background-image: url("./background90.jpg");
+    background-image: url("../../assets/background90.jpg");
     background-position: bottom;
     position: absolute;
     width: 100%;

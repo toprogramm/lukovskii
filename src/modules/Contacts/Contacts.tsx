@@ -18,17 +18,17 @@ const Contacts = () => {
           <h5>{phone}</h5>
           <h5>{email}</h5>
           <div className="iconBoard">
-            <a href={website.link} className="contactIcon">
+            <a target="_blank" href={website.link} className="contactIcon">
               {website.svg}
             </a>
-            <a href={linkedIn.link} className="contactIcon">
+            <a target="_blank" href={linkedIn.link} className="contactIcon">
               {linkedIn.svg}
             </a>
 
-            <a href={telegram.link} className="contactIcon">
+            <a target="_blank" href={telegram.link} className="contactIcon">
               {telegram.svg}
             </a>
-            <a href={github.link} className="contactIcon">
+            <a target="_blank" href={github.link} className="contactIcon">
               {github.svg}
             </a>
           </div>
