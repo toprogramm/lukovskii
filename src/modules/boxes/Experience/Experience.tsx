@@ -11,8 +11,8 @@ interface ExperienceProps {
 const Experience: FC<ExperienceProps> = () => {
   return (
     <div className="Experience">
-      <h3 className="greenText">
-        <b className="experienceWord">Опыт Работы</b>
+      <h3 className="Experience__name greenText">
+        <b>Опыт Работы</b>
       </h3>
       <Jobs/>
     </div>

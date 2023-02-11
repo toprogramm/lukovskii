@@ -1,28 +1,39 @@
-.Contacts{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin-top: 8px;
-  
-}
-.contactCenter{
+.Contacts {
   width: 388px;
+  &__name {
+    align-self: center;
+    padding: 5px 8px 8px 8px;
+    margin-bottom: 5px;
+    @media (max-width: 800px) {
+      margin-bottom: 0px;
+    }
+  }
+  &__picturePlusInfo {
+    display: flex;
+    gap:10px;
+    align-items: center;
+    justify-content: center;
+  }
+ 
+  &__pad {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 26px;
+    @media (max-width: 800px) {
+      gap: 15px;
+    }
+  }
 }
-.contactPad{
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap:8px;
-  
-}
-.iconBoard{
+.iconBoard {
   display: flex;
   justify-content: space-between;
-  gap:8px
+  gap: 8px;
 }
 .contactIcon {
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   height: 55px;
@@ -32,37 +43,35 @@
   overflow: hidden;
   box-shadow: 3px 3px 3px #00000060;
 }
-.icon{
+.icon {
   height: 45px;
   width: 45px;
-  
 }
 svg #linkedIn {
-  fill: #1B1F23;
+  fill: #1b1f23;
 }
-svg :hover #linkedIn  {
+svg :hover #linkedIn {
   fill: #005025;
 }
 /*MingCute from linkedIn to*/
-svg #MingCute{
-  fill:white; 
+svg #MingCute {
+  fill: white;
 }
-svg  #github{
-  fill:#1B1F23;
-}
-
-
-svg  #telegram{
-  fill:#1B1F23;
+svg #github {
+  fill: #1b1f23;
 }
 
+svg #telegram {
+  fill: #1b1f23;
+}
 
-svg  #website{
-  fill:#1B1F23;
+svg #website {
+  fill: #1b1f23;
 }
 svg :hover {
-  fill:#005025;
-  
+  fill: #005025;
 }
 
-
+.smallPadding {
+  padding-top: 8px;
+}

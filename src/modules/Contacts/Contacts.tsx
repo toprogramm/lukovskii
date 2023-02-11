@@ -9,14 +9,14 @@ import "./Contacts.scss";
 const Contacts = () => {
   return (
     <div className="Contacts">
-      <div className="contactCenter">
+      
       <ContentBox orientationVariant={OrientationVariant.other}>
-        <div className="contactPad">
-          <h4 className="greenText">
+        <div className="Contacts__pad">
+          <h3 className="Contacts__name greenText smallPadding">
             <b>My Contacts</b>
-          </h4>
-          <h5>{phone}</h5>
-          <h5>{email}</h5>
+          </h3>
+          <div className="Contacts__picturePlusInfo"><img src="./whatsapp.svg" /><h4><b>{phone}</b></h4></div>
+          <div className="Contacts__picturePlusInfo" ><img  src="./email.svg" /><h4><b>{email}</b></h4></div>
           <div className="iconBoard">
             <a target="_blank" href={website.link} className="contactIcon">
               {website.svg}
@@ -34,7 +34,7 @@ const Contacts = () => {
           </div>
         </div>
       </ContentBox>
-      </div>
+      
     </div>
   );
 };

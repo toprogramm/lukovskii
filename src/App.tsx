@@ -9,6 +9,9 @@ import Experience from "./modules/boxes/Experience/Experience";
 import Contacts from "./modules/Contacts/Contacts";
 import Jobs from "./modules/boxes/Jobs/Jobs";
 import { disableReactDevTools } from "@fvilers/disable-react-devtools";
+import Skills from "./modules/boxes/Skills/Skills";
+import Credits from "./modules/Credits/Credits";
+import Footer from "./modules/Footer/Footer";
 if (process.env.NODE_ENV === "production") {
   disableReactDevTools();
 }
@@ -20,11 +23,15 @@ function App() {
         <Header />
         <Navigation />
         <PhotoPage />
+        <div className="ContactBox"><Skills></Skills>
+        <Contacts></Contacts></div>
         <Experience>
           </Experience>
-        <Contacts></Contacts>
+        
+        
 
-        <h6>...................</h6>
+        <Credits></Credits>
+        <Footer></Footer>
       </div>
     </div>
   );
