@@ -11,7 +11,6 @@
   background-size: cover;
   overflow: hidden;
   margin-bottom: 8px;
-
 }
 .contentBoxImage {
   background-image: url("../../assets/background.jpg");
@@ -22,7 +21,7 @@
   opacity: 1;
   background-size: cover;
   &__vertical {
-    background-image: url("../../assets/background90.jpg");
+    background-image: url("../../assets/transparentBackground.svg");
     background-position: bottom;
     position: absolute;
     width: 100%;
