@@ -1,3 +1,4 @@
+export const userLang = navigator.language == "ru-RU" ? "ru" : "en";
 import React from "react";
 import ReactDOM from "react-dom";
 import "./App.css";

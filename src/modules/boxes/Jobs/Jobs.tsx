@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import "./Jobs.scss";
 import ContentBox from "../../ContentBox/ContentBox";
 import { OrientationVariant } from "../../ContentBox/ContentBox";
+import { userLang } from "../../../App";
 
 const Jobs = () => {
   return (
@@ -52,7 +53,7 @@ const Jobs = () => {
   );
 };
 
-export const userLang = navigator.language == "ru-RU" ? "ru" : "en";
+
 
 const jobHistory = [
   {
