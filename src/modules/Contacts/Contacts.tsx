@@ -1,4 +1,4 @@
-import { linkedIn, github, email, website, telegram, phone  } from "./ContactsData";
+import { contactData  } from "./ContactsData";
 
 import ContentBox from "../ContentBox/ContentBox";
 import { OrientationVariant } from "../ContentBox/ContentBox";
@@ -15,21 +15,21 @@ const Contacts = () => {
           <h3 className="Contacts__name greenText smallPadding">
             <b>My Contacts</b>
           </h3>
-          <div className="Contacts__picturePlusInfo"><img src="./whatsapp.svg" /><h4><b>{phone}</b></h4></div>
-          <div className="Contacts__picturePlusInfo" ><img  src="./email.svg" /><h4><b>{email}</b></h4></div>
+          <div className="Contacts__picturePlusInfo"><img src="./whatsapp.svg" /><h4><b>{contactData.phone}</b></h4></div>
+          <div className="Contacts__picturePlusInfo" ><img  src="./email.svg" /><h4><b>{contactData.email}</b></h4></div>
           <div className="iconBoard">
-            <a target="_blank" href={website.link} className="contactIcon">
-              {website.svg}
+            <a target="_blank" href={contactData.website.link} className="contactIcon">
+              {contactData.website.svg}
             </a>
-            <a target="_blank" href={linkedIn.link} className="contactIcon">
-              {linkedIn.svg}
+            <a target="_blank" href={contactData.linkedIn.link} className="contactIcon">
+              {contactData.linkedIn.svg}
             </a>
 
-            <a target="_blank" href={telegram.link} className="contactIcon">
-              {telegram.svg}
+            <a target="_blank" href={contactData.telegram.link} className="contactIcon">
+              {contactData.telegram.svg}
             </a>
-            <a target="_blank" href={github.link} className="contactIcon">
-              {github.svg}
+            <a target="_blank" href={contactData.github.link} className="contactIcon">
+              {contactData.github.svg}
             </a>
           </div>
         </div>

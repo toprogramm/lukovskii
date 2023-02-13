@@ -1,5 +1,9 @@
+import React, { MouseEvent } from "react";
 import { FC } from "react";
 import "./Button.scss";
+import { forwardRef } from "react";
+import { Container } from "react-dom";
+
 export enum ColorVariant {
   usual = "usual",
   black = "black",
@@ -8,15 +12,17 @@ export enum ShadowVariant {
   usual = "usual",
   none = "none",
 }
+
 interface ButtonProps {
   colorVariant: ColorVariant;
   shadowVariant: ShadowVariant;
-  children: JSX.Element | JSX.Element[];
+  children: React.ReactNode;
+  onClick: () => void;
 }
 
-const Button: FC<ButtonProps> = ({ colorVariant, shadowVariant, children }) => {
+const Button: FC<ButtonProps> = ({ colorVariant, shadowVariant, children, onClick }) => {
   return (
-    <button
+    <button onClick={onClick}
       className={
         colorVariant === ColorVariant.usual ? "Button" : "Button Button__black"
       }
