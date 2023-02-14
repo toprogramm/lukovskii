@@ -1,0 +1,24 @@
+.AboutMe{
+  width:screen;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 8px;
+
+  
+  &__item{
+    line-height:normal;
+    text-align: start;
+    padding:8px
+
+  }
+  &__box{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  &__name{
+    padding: 5px 5px 0px 5px;
+  }
+
+}
