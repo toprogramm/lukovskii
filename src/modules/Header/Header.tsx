@@ -4,7 +4,7 @@ function Header() {
   return (
     <div className="Header">
       <img style={{opacity:0}} src="./burger.svg"></img>
-      <div>LUKOVSKii</div>
+      <div className="Header__name">LUKOVSKii</div>
       <a><img src="./share.svg"></img></a>
     </div>
   );

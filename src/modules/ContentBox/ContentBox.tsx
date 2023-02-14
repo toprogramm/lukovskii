@@ -9,7 +9,7 @@ export enum OrientationVariant {
 
 interface ContextBoxProps {
   orientationVariant: OrientationVariant;
-  children: JSX.Element | JSX.Element[];
+  children: React.ReactNode;
 }
 
 const ContentBox: FC<ContextBoxProps> =({orientationVariant, children}) => {
