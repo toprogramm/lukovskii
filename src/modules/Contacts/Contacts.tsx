@@ -15,11 +15,11 @@ const Contacts = () => {
           <h3 className="Contacts__name greenText smallPadding">
             <b>My Contacts</b>
           </h3>
-          <div className="Contacts__picturePlusInfo"><img src="./whatsapp.svg" /><h4><b>{contactData.phone}</b></h4></div>
-          <div className="Contacts__picturePlusInfo" ><img  src="./email.svg" /><h4><b>{contactData.email}</b></h4></div>
+          <div className="Contacts__picturePlusInfo"><img src="./whatsapp.svg" /><a href="tel:+996550524902" className="blackText"><h4><b>{contactData.phone}</b></h4></a></div>
+          <div className="Contacts__picturePlusInfo" ><img  src="./email.svg"  /><a href="mailto:onelukovskii@gmail.com" className="blackText"><h4><b>{contactData.email}</b></h4></a></div>
           <div className="iconBoard">
-            <a target="_blank" href={contactData.website.link} className="contactIcon">
-              {contactData.website.svg}
+            <a target="_blank" href={contactData.facebook.link} className="contactIcon">
+              {contactData.facebook.svg}
             </a>
             <a target="_blank" href={contactData.linkedIn.link} className="contactIcon">
               {contactData.linkedIn.svg}
