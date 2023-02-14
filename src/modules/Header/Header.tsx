@@ -3,9 +3,9 @@ import "./Header.scss";
 function Header() {
   return (
     <div className="Header">
-      <img src="./burger.svg"></img>
+      <img style={{opacity:0}} src="./burger.svg"></img>
       <div>LUKOVSKii</div>
-      <img src="./share.svg"></img>
+      <a><img src="./share.svg"></img></a>
     </div>
   );
 }
