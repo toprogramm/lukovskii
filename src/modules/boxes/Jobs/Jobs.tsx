@@ -179,7 +179,7 @@ const jobHistory = [
   {
     position: {
       ru: "Технический Директор (CTO), \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0  IT-Инженер",
-      en: "Chief Technology Officer (CTO), \u00A0 \u00A0 \u00A0 \u00A0 \u00A0  \u00A0 \u00A0 IT-Engineer",
+      en: "Chief Technology Officer (CTO), \u00A0 \u00A0 \u00A0 \u00A0 \u00A0  \u00A0 \u00A0 \u00A0 IT-Engineer",
     },
     company: {
       ru: "«Мидгалэль» ООО",

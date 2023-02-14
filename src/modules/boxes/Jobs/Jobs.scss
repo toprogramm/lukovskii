@@ -1,3 +1,8 @@
 .jobsCase{
+  display:flex;
+  flex-basis: 49%;
+  width:100%;
   word-wrap: break-word;
+  @media (max-width: 800px) {
+    flex-basis: 100%;}
 }
