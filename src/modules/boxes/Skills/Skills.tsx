@@ -55,7 +55,7 @@ const Skills = () => {
           <>
             {skills.skills.en.map((item) => {
               return (
-                <div className="ButttonLimiter">
+                <div className="ButtonLimiter">
                   <Button onClick={()=> {}}
                     colorVariant={ColorVariant.usual}
                     shadowVariant={ShadowVariant.usual}
