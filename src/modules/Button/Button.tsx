@@ -20,9 +20,15 @@ interface ButtonProps {
   onClick: () => void;
 }
 
-const Button: FC<ButtonProps> = ({ colorVariant, shadowVariant, children, onClick }) => {
+const Button: FC<ButtonProps> = ({
+  colorVariant,
+  shadowVariant,
+  children,
+  onClick,
+}) => {
   return (
-    <button onClick={onClick}
+    <button
+      onClick={onClick}
       className={
         colorVariant === ColorVariant.usual ? "Button" : "Button Button__black"
       }
