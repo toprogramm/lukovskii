@@ -46,7 +46,7 @@ const skills = {
 };
 const Skills = () => {
   return (
-    <div className="Skills">
+    <div className="Skills -ru">
       <ContentBox orientationVariant={OrientationVariant.other}>
         
         <h3 className=" Skills__name greenText"><b>{skills.name.en}</b></h3>
@@ -56,7 +56,7 @@ const Skills = () => {
             {skills.skills.en.map((item) => {
               return (
                 <div className="ButttonLimiter">
-                  <Button
+                  <Button onClick={()=> {}}
                     colorVariant={ColorVariant.usual}
                     shadowVariant={ShadowVariant.usual}
                   >
