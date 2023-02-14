@@ -1,6 +1,5 @@
 export const userLang = navigator.language == "ru-RU" ? "ru" : "en";
 import React from "react";
-
 import "./App.css";
 import Header from "./modules/Header/Header";
 import PhotoPage from "./modules/boxes/PhotoPage/PhotoPage";
@@ -13,7 +12,7 @@ import Skills from "./modules/boxes/Skills/Skills";
 import Credits from "./modules/Credits/Credits";
 import Footer from "./modules/Footer/Footer";
 
-import Button from "./modules/Button/Button";
+import AboutMe from "./modules/boxes/AboutMe/AboutMe";
 
 if (process.env.NODE_ENV === "production") {
   disableReactDevTools();
@@ -32,18 +31,13 @@ function App() {
           <Skills></Skills>
           <Contacts></Contacts>
         </div>
+        <AboutMe></AboutMe>
         <Experience>
           <></>
         </Experience>
 
         <Credits></Credits>
         <Footer></Footer>
-
-        
-
-
-
-
         
       </div>
     </div>
