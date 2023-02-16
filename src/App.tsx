@@ -13,17 +13,16 @@ import Credits from "./modules/Credits/Credits";
 import Footer from "./modules/Footer/Footer";
 
 import AboutMe from "./modules/boxes/AboutMe/AboutMe";
+import ScrollUp from "./modules/ScrollUp/ScrollUp";
 
 if (process.env.NODE_ENV === "production") {
   disableReactDevTools();
 }
-function clickMe() {
-  alert("You clicked me!");
-}
+
 function App() {
   return (
     <div className="App">
-      <div className="box">
+      <div className="box" id="box">
         <Header />
         <Navigation />
         <PhotoPage />
@@ -38,7 +37,7 @@ function App() {
 
         <Credits></Credits>
         <Footer></Footer>
-        
+        <ScrollUp></ScrollUp>
       </div>
     </div>
   );

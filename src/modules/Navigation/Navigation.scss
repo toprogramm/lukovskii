@@ -1,7 +1,8 @@
 .Navigation {
   width: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  column-gap: 5px;
+  &__box{
+    display: flex;
+    gap:5px;
+    width: 100%;
+  }
 }

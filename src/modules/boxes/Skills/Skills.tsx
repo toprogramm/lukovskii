@@ -40,7 +40,6 @@ const skills = {
       "Analytical skills",
       "Long Term Planning",
       "Personnel Management",
-      
     ],
   },
 };
@@ -48,15 +47,17 @@ const Skills = () => {
   return (
     <div className="Skills -ru">
       <ContentBox orientationVariant={OrientationVariant.other}>
-        
-        <h3 className=" Skills__name greenText"><b>{skills.name.en}</b></h3>
-        
+        <h3 className=" Skills__name greenText">
+          <b>{skills.name.en}</b>
+        </h3>
+
         <div className="Skills__buttons">
           <>
             {skills.skills.en.map((item) => {
               return (
                 <div className="ButtonLimiter">
-                  <Button onClick={()=> {}}
+                  <Button
+                    onClick={() => {}}
                     colorVariant={ColorVariant.usual}
                     shadowVariant={ShadowVariant.usual}
                   >

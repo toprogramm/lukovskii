@@ -4,31 +4,25 @@
   width: auto;
   height: auto;
   flex-basis: 49.45%;
-  @media (max-width:800px) {
-    flex-basis: 100%
-    
+  @media (max-width: 800px) {
+    flex-basis: 100%;
   }
 
-  
   &__buttons {
-    
     width: auto;
     height: auto;
     display: flex;
     gap: 4px;
     flex-wrap: wrap;
     justify-content: flex-start;
-    
-    @media (max-width:800px) {
+
+    @media (max-width: 800px) {
       width: auto;
-      
     }
-    
   }
-  &__name{
+  &__name {
     align-self: center;
     padding: 5px 8px 8px 8px;
     margin-bottom: 5px;
-    
   }
 }

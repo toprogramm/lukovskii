@@ -45,7 +45,7 @@ const aboutMeData = {
 };
 const AboutMe = () => {
   return (
-    <div className="AboutMe">
+    <div id="AboutMe" className="AboutMe">
       <ContentBox orientationVariant={OrientationVariant.other}>
         <div className="AboutMe__name">
           <h4 className="greenText">
