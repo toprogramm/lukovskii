@@ -27,18 +27,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
     gap: 26px;
     @media (max-width: 800px) {
       gap: 15px;
       
     }
   }
+  &__link :hover{
+    color: rgba(0, 84, 153, 0.85);
+    
+  }
 }
+
 
 .iconBoard {
   display: flex;
-  width:70%;
+  width:85%;
   justify-content: space-between;
   gap: 8px;
 }
@@ -53,33 +57,13 @@
   overflow: hidden;
   box-shadow: 3px 3px 3px #00000060;
 }
+.contactIcon:hover .svgIcon {
+  fill:#005025;
+}
+
 .icon {
   height: 45px;
   width: 45px;
-}
-svg #linkedIn {
-  fill: #0a66c2;
-}
-svg :hover #linkedIn {
-  fill: #005025;
-}
-/*MingCute from linkedIn to*/
-svg #MingCute {
-  fill: white;
-}
-svg #github {
-  fill: #24292f;
-}
-
-svg #telegram {
-  fill: #3390ec;
-}
-
-svg #website {
-  fill: #1b1f23;
-}
-svg :hover {
-  fill: #005025;
 }
 
 .smallPadding {

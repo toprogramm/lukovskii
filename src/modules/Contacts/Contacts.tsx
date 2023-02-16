@@ -8,7 +8,7 @@ import "./Contacts.scss";
 
 const Contacts = () => {
   return (
-    <div className="Contacts">
+    <div id="Contacts" className="Contacts">
       <ContentBox orientationVariant={OrientationVariant.other}>
         <div className="Contacts__pad">
           <h3 className="Contacts__name greenText smallPadding">
@@ -16,7 +16,7 @@ const Contacts = () => {
           </h3>
           <div className="Contacts__picturePlusInfo">
             <img src="./whatsapp.svg" />
-            <a href="tel:+996550524902" className="blackText">
+            <a href="tel:+996550524902" className="Contacts__link blackText">
               <h4>
                 <b>{contactData.phone}</b>
               </h4>
@@ -24,7 +24,10 @@ const Contacts = () => {
           </div>
           <div className="Contacts__picturePlusInfo">
             <img src="./email.svg" />
-            <a href="mailto:onelukovskii@gmail.com" className="blackText">
+            <a
+              href="mailto:onelukovskii@gmail.com"
+              className="Contacts__link blackText"
+            >
               <h4>
                 <b>{contactData.email}</b>
               </h4>
@@ -52,6 +55,13 @@ const Contacts = () => {
               className="contactIcon"
             >
               {contactData.telegram.svg}
+            </a>
+            <a
+              target="_blank"
+              href={contactData.whatsapp.link}
+              className="contactIcon"
+            >
+              {contactData.whatsapp.svg}
             </a>
             <a
               target="_blank"
