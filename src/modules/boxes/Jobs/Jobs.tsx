@@ -42,7 +42,6 @@ const Jobs = () => {
                       return <li>{item1}</li>;
                     })}
                   </ul>
-                  <>{console.log(navigator.language)}</>
                 </div>
               </ContentBox>
             </div>
@@ -52,8 +51,6 @@ const Jobs = () => {
     </>
   );
 };
-
-
 
 const jobHistory = [
   {
@@ -129,8 +126,8 @@ const jobHistory = [
       en: "Flutter Developer, System and Social Designer",
     },
     company: {
-      ru: "«Image Language»",
-      en: "«Image Language»",
+      ru: "«Meta Vocobulary»",
+      en: "«Meta Vocobulary»",
     },
     period: {
       ru: "Ноябрь 2022 - Настоящее время",
