@@ -4,10 +4,8 @@ import { ColorVariant } from "../../Button/Button";
 import { ShadowVariant } from "../../Button/Button";
 import ContentBox from "../../ContentBox/ContentBox";
 import Avatar from "../../Avatar/Avatar";
-import TextField from "../../TextField/TextField";
 import { OrientationVariant } from "../../ContentBox/ContentBox";
 import { contactData } from "../../Contacts/ContactsData";
-
 
 const PhotoPage = () => {
   return (
@@ -15,32 +13,28 @@ const PhotoPage = () => {
       <ContentBox orientationVariant={OrientationVariant.usual}>
         <Avatar />
         <div className="photoPage__textField">
-          <TextField>
-            <h5>
-              <b className="whiteText">Hello</b>
-            </h5>
-          </TextField>
-          <TextField>
-            <h5>
-              <b className="whiteText">I'm Ivan Lukovskii</b>
-            </h5>
-          </TextField>
-          <TextField>
-            <h4 className="whiteText">Front End Developer</h4>
-          </TextField>
+          <h5>
+            <b className="whiteText">Hello</b>
+          </h5>
+          <h5>
+            <b className="whiteText">I'm Ivan Lukovskii</b>
+          </h5>
+          <h4 className="whiteText">Front End Developer</h4>
         </div>
         <div className="buttonField">
-        <a
-            style={{ textDecoration: "none" }} target="_blank"
+          <a
+            style={{ textDecoration: "none" }}
+            target="_blank"
             href={contactData.linkedIn.link}
-          ><Button
-
-            colorVariant={ColorVariant.black}
-            shadowVariant={ShadowVariant.usual}
-            onClick={() => {}}
           >
-            <h5> Hire me </h5>
-          </Button></a>
+            <Button
+              colorVariant={ColorVariant.black}
+              shadowVariant={ShadowVariant.usual}
+              onClick={() => {}}
+            >
+              <h5> Hire me </h5>
+            </Button>
+          </a>
           <a
             style={{ textDecoration: "none" }}
             href="Front End Developer Ivan Lukovskii (en).pdf"
