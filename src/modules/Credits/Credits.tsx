@@ -24,6 +24,7 @@ const credits = {
       on Freepik
     </div>
   ),
+  icons: (<div>Icons from <a className="whiteText" href="www.svgrepo.com">SVG Repo</a></div>)
 };
 
 const Credits = () => {
@@ -33,6 +34,7 @@ const Credits = () => {
       <div className="whiteText">{credits.icon}</div>
       <div className="whiteText">{credits.photoBackground}</div>
       <div className="whiteText" >{credits.transparentBackground}</div>
+      <div className="whiteText" >{credits.icons}</div>
     </div>
   );
 };
