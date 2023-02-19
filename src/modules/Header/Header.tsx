@@ -1,8 +1,20 @@
 import { text } from "stream/consumers";
 import "./Header.scss";
 // rotate 3d https://sitehere.ru/3d-preobrazovaniya-i-animacii
-
-const Share = (
+const BURGER_SVG = (
+  <svg
+    width="19"
+    height="15"
+    viewBox="0 0 19 15"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <line y1="1" x2="19" y2="1" stroke="#035C2C" stroke-width="2" />
+    <line y1="6.33337" x2="19" y2="6.33337" stroke="#035C2C" stroke-width="2" />
+    <line y1="12" x2="19" y2="12" stroke="#035C2C" stroke-width="2" />
+  </svg>
+);
+const SHARE_SVG = (
   <svg
     height="24px"
     width="24px"
@@ -34,7 +46,7 @@ async function copyCode(link: string) {
 function Header() {
   return (
     <div id="header" className="Header">
-      <img style={{ opacity: 0 }} src="./burger.svg"></img>
+      <div style={{opacity:0}}>{BURGER_SVG}</div>
       <div className="Header__name">LUKOVSKii</div>
       <a
         id="copy"
@@ -43,7 +55,7 @@ function Header() {
           copyCode("https://www.lukovskii.com");
         }}
       >
-        {Share}
+        {SHARE_SVG}
       </a>
     </div>
   );
