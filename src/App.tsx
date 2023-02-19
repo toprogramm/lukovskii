@@ -36,9 +36,10 @@ function App() {
         </Experience>
 
         <Credits></Credits>
-        <Footer></Footer>
+        
         <ScrollUp></ScrollUp>
       </div>
+      <Footer></Footer>
     </div>
   );
 }

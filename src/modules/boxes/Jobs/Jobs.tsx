@@ -10,15 +10,15 @@ const Jobs = () => {
       {jobHistory.map((item, index) => {
         if (userLang == "ru") {
           return (
-            <div className="jobsCase">
+            <div className="Job">
               <ContentBox orientationVariant={OrientationVariant.other}>
-                <div className="vacancy job" key={index}>
-                  <h4 className="greenText">
+                <div className="Job__vacancy" key={index}>
+                  <h4 className="Job__position greenText">
                     <b>{item.position.ru}</b>
                   </h4>
-                  <h5 className="greyText job">Компания: {item.company.ru}</h5>
+                  <h5 className="greyText">Компания: {item.company.ru}</h5>
                   <h5 className="greyText">{item.period.ru}</h5>
-                  <ul className="job">
+                  <ul className="Job__achivements">
                     {item.achivements.ru.map((item1) => {
                       return <li>{item1}</li>;
                     })}
@@ -29,15 +29,15 @@ const Jobs = () => {
           );
         } else {
           return (
-            <div className="jobsCase">
+            <div className="Job">
               <ContentBox orientationVariant={OrientationVariant.other}>
-                <div className="vacancy" key={index}>
+                <div className="Job__vacancy" key={index}>
                   <h4 className="greenText">
                     <b>{item.position.en}</b>
                   </h4>
                   <h5 className="greyText">Company: {item.company.en}</h5>
                   <h5 className="greyText">{item.period.en}</h5>
-                  <ul className="job">
+                  <ul className="Job__achivements">
                     {item.achivements.en.map((item1) => {
                       return <li>{item1}</li>;
                     })}
@@ -175,8 +175,8 @@ const jobHistory = [
   },
   {
     position: {
-      ru: "Технический Директор (CTO), \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0 \u00A0  IT-Инженер",
-      en: "Chief Technology Officer (CTO), \u00A0 \u00A0 \u00A0 \u00A0 \u00A0  \u00A0 \u00A0 \u00A0 IT-Engineer",
+      ru: "Технический Директор (CTO), IT-Инженер",
+      en: "Chief Technology Officer (CTO), IT-Engineer",
     },
     company: {
       ru: "«Мидгалэль» ООО",

@@ -1,5 +1,6 @@
 import "./ScrollUp.scss";
 import { ScrollTop } from "../Scroll/Scroll";
+import { useEffect } from "react";
 const ScrollUpIcon = (
   <svg
     width="40px"
@@ -20,6 +21,7 @@ const ScrollUpIcon = (
 );
 
 const ScrollUp = () => {
+  
   const name = "ScrollUp";
   function bla() {
     const PageScrollUp = document.querySelector<HTMLElement>(
