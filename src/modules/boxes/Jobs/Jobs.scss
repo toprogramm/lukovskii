@@ -1,9 +1,41 @@
-.jobsCase {
+.Job {
   display: flex;
   flex-basis: 49%;
   width: 100%;
-  word-wrap: break-word;
   @media (max-width: 800px) {
     flex-basis: 100%;
   }
+  &__achivements{
+    display: flex;
+    word-wrap: break-word;
+    margin-top: 7px;
+    flex-direction: column;
+    text-align: start;
+    gap: 0.5em;
+  }
+  &__vacancy {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 8px;
+    text-align: start;
+    padding-left: 4px;
+    @media (max-width: 800px) {
+      width: 100%;
+      padding-left: 15px;
+    }
+  }
+}
+.marker ::marker {
+  display: list-item;
+  list-style-type: "!!!!";
+  padding-inline-start: 1ch;
+  color: #000000;
+  font-size: 1.5em;
+}
+li::before {
+  content: "•";
+  padding-inline: 0.5ch;
+  margin-inline-end: 0.5ch;
 }

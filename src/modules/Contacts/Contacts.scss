@@ -37,33 +37,26 @@
     color: rgba(0, 84, 153, 0.85);
     
   }
-}
-
-
-.iconBoard {
-  display: flex;
-  width:85%;
-  justify-content: space-between;
-  gap: 8px;
-}
-.contactIcon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 55px;
-  width: 55px;
-  background-color: #ffffff;
-  border-radius: 3em;
-  overflow: hidden;
-  box-shadow: 3px 3px 3px #00000060;
-}
-.contactIcon:hover .svgIcon {
-  fill:#005025;
-}
-
-.icon {
-  height: 45px;
-  width: 45px;
+  &__iconBoard {
+    display: flex;
+    width:85%;
+    justify-content: space-between;
+    gap: 8px;
+  }
+  &__contactIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    width: 55px;
+    background-color: #ffffff;
+    border-radius: 3em;
+    overflow: hidden;
+    box-shadow: 3px 3px 3px #00000060;
+  }
+  &__contactIcon:hover .svgIcon {
+    fill:#005025;
+  }
 }
 
 .smallPadding {

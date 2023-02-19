@@ -1,7 +1,9 @@
 .Footer{
+  width: 100%;
+  position:relative;
   display: flex;
   height: 30px;
-  margin-top: 10px;
+  margin-top: 8px;
   background-image: url("../../assets/transparentBackground.svg");
   justify-content: flex-end;
   align-items: center;

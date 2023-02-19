@@ -15,9 +15,9 @@ interface ContextBoxProps {
 const ContentBox: FC<ContextBoxProps> =({orientationVariant, children}) => {
   return (
     <div className="ContentBox">
-      <div className={orientationVariant === OrientationVariant.usual ? "contentBoxImage" : "contentBoxImage__vertical"} />
+      <div className={orientationVariant === OrientationVariant.usual ? "ContentBox__image" : "ContentBox__vertical"} />
 
-      <div className="contextBoxChildren">{children}</div>
+      <div className="ContentBox__children">{children}</div>
     </div>
   );
 }

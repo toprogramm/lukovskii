@@ -33,18 +33,18 @@ const Contacts = () => {
               </h4>
             </a>
           </div>
-          <div className="iconBoard">
+          <div className="Contacts__iconBoard">
             <a
               target="_blank"
               href={contactData.facebook.link}
-              className="contactIcon"
+              className="Contacts__contactIcon"
             >
               {contactData.facebook.svg}
             </a>
             <a
               target="_blank"
               href={contactData.linkedIn.link}
-              className="contactIcon"
+              className="Contacts__contactIcon"
             >
               {contactData.linkedIn.svg}
             </a>
@@ -52,21 +52,21 @@ const Contacts = () => {
             <a
               target="_blank"
               href={contactData.telegram.link}
-              className="contactIcon"
+              className="Contacts__contactIcon"
             >
               {contactData.telegram.svg}
             </a>
             <a
               target="_blank"
               href={contactData.whatsapp.link}
-              className="contactIcon"
+              className="Contacts__contactIcon"
             >
               {contactData.whatsapp.svg}
             </a>
             <a
               target="_blank"
               href={contactData.github.link}
-              className="contactIcon"
+              className="Contacts__contactIcon"
             >
               {contactData.github.svg}
             </a>

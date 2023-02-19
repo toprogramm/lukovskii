@@ -14,4 +14,10 @@
   &__name{
     font-family: "Rambla";
   }
+  &__share:hover{
+     fill:#005025;
+  }
+  &__share:hover:active{
+    fill:rgba(136, 0, 0, 0.85);
+ }
 }

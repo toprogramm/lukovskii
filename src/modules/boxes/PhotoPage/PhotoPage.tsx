@@ -12,7 +12,7 @@ const PhotoPage = () => {
     <div className="PhotoPage">
       <ContentBox orientationVariant={OrientationVariant.usual}>
         <Avatar />
-        <div className="photoPage__textField">
+        <div className="PhotoPage__textField">
           <h5>
             <b className="whiteText">Hello</b>
           </h5>
@@ -21,7 +21,7 @@ const PhotoPage = () => {
           </h5>
           <h4 className="whiteText">Front End Developer</h4>
         </div>
-        <div className="buttonField">
+        <div className="PhotoPage__buttonField">
           <a
             style={{ textDecoration: "none" }}
             target="_blank"
@@ -37,7 +37,7 @@ const PhotoPage = () => {
           </a>
           <a
             style={{ textDecoration: "none" }}
-            href="Front End Developer Ivan Lukovskii (en).pdf"
+            href="Front End Developer Ivan Lukovskii (multilang).pdf"
             download
           >
             <Button
