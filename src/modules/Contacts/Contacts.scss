@@ -4,16 +4,11 @@
   width: 100%;
   @media (max-width: 800px) {
     flex-basis: 100%;
-    
   }
 
   &__name {
     align-self: center;
     padding: 5px 8px 8px 8px;
-    margin-bottom: 5px;
-    @media (max-width: 800px) {
-      margin-bottom: 0px;
-    }
   }
   &__picturePlusInfo {
     display: flex;
@@ -27,19 +22,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 26px;
+    gap: 15px;
     @media (max-width: 800px) {
       gap: 15px;
-      
     }
   }
-  &__link :hover{
+  &__link :hover {
     color: rgba(0, 84, 153, 0.85);
-    
   }
   &__iconBoard {
     display: flex;
-    width:85%;
+    width: 85%;
     justify-content: space-between;
     gap: 8px;
   }
@@ -55,7 +48,7 @@
     box-shadow: 3px 3px 3px #00000060;
   }
   &__contactIcon:hover .svgIcon {
-    fill:#005025;
+    fill: #005025;
   }
 }
 
