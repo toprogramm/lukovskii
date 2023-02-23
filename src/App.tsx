@@ -7,7 +7,7 @@ import Navigation from "./modules/Navigation/Navigation";
 import Experience from "./modules/boxes/Experience/Experience";
 import Contacts from "./modules/Contacts/Contacts";
 
-import { disableReactDevTools } from "@fvilers/disable-react-devtools";
+// import { disableReactDevTools } from "@fvilers/disable-react-devtools";
 import Skills from "./modules/boxes/Skills/Skills";
 import Credits from "./modules/Credits/Credits";
 import Footer from "./modules/Footer/Footer";
@@ -15,9 +15,9 @@ import Footer from "./modules/Footer/Footer";
 import AboutMe from "./modules/boxes/AboutMe/AboutMe";
 import ScrollUp from "./modules/ScrollUp/ScrollUp";
 
-if (process.env.NODE_ENV === "production") {
-  disableReactDevTools();
-}
+// if (process.env.NODE_ENV === "production") {
+//   disableReactDevTools();
+// }
 
 function App() {
   return (
@@ -36,7 +36,7 @@ function App() {
         </Experience>
 
         <Credits></Credits>
-        
+
         <ScrollUp></ScrollUp>
       </div>
       <Footer></Footer>
