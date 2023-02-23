@@ -8,45 +8,33 @@ const Jobs = () => {
   return (
     <>
       {jobHistory.map((item, index) => {
-        if (userLang == "ru") {
-          return (
-            <div className="Job">
-              <ContentBox orientationVariant={OrientationVariant.other}>
-                <div className="Job__vacancy" key={index}>
-                  <h4 className="Job__position greenText">
-                    <b>{item.position.ru}</b>
-                  </h4>
-                  <h5 className="greyText">Компания: {item.company.ru}</h5>
-                  <h5 className="greyText">{item.period.ru}</h5>
-                  <ul className="Job__achivements">
-                    {item.achivements.ru.map((item1) => {
-                      return <li>{item1}</li>;
+        return (
+          <div className="Job">
+            <ContentBox orientationVariant={OrientationVariant.other}>
+              <div className="Job__vacancy" key={index}>
+                <h4 className="Job__position greenText">
+                  <b>
+                    {item.position.en.map((elem) => {
+                      return (
+                        <b>
+                          {elem}
+                          <br></br>
+                        </b>
+                      );
                     })}
-                  </ul>
-                </div>
-              </ContentBox>
-            </div>
-          );
-        } else {
-          return (
-            <div className="Job">
-              <ContentBox orientationVariant={OrientationVariant.other}>
-                <div className="Job__vacancy" key={index}>
-                  <h4 className="greenText">
-                    <b>{item.position.en}</b>
-                  </h4>
-                  <h5 className="greyText">Company: {item.company.en}</h5>
-                  <h5 className="greyText">{item.period.en}</h5>
-                  <ul className="Job__achivements">
-                    {item.achivements.en.map((item1) => {
-                      return <li>{item1}</li>;
-                    })}
-                  </ul>
-                </div>
-              </ContentBox>
-            </div>
-          );
-        }
+                  </b>
+                </h4>
+                <h5 className="greyText">Company: {item.company.en}</h5>
+                <h5 className="greyText">{item.period.en}</h5>
+                <ul className="Job__achivements">
+                  {item.achivements.en.map((elem) => {
+                    return <li>{elem}</li>;
+                  })}
+                </ul>
+              </div>
+            </ContentBox>
+          </div>
+        );
       })}
     </>
   );
@@ -54,7 +42,7 @@ const Jobs = () => {
 
 const jobHistory = [
   {
-    position: { ru: "Front End Developer", en: "Front End Developer" },
+    position: { ru: ["Front End Developer"], en: ["Front End Developer"] },
     company: {
       ru: "«Hi Psy» LLC",
       en: "«Hi Psy» LLC",
@@ -77,7 +65,7 @@ const jobHistory = [
     },
   },
   {
-    position: { ru: "Front End Developer", en: "Front End Developer" },
+    position: { ru: ["Front End Developer"], en: ["Front End Developer"] },
     company: {
       ru: "«STRADA»",
       en: "«STRADA»",
@@ -100,7 +88,7 @@ const jobHistory = [
     },
   },
   {
-    position: { ru: "Разработчик Python", en: "Python Developer" },
+    position: { ru: ["Разработчик Python"], en: ["Python Developer"] },
     company: {
       ru: "«BIP39»",
       en: "«BIP39»",
@@ -122,12 +110,20 @@ const jobHistory = [
   },
   {
     position: {
-      ru: "Flutter Разработчик, Системный и Социальный Дизайнер",
-      en: "Flutter Developer, System and Social Designer",
+      ru: [
+        "Front End Developer,",
+        "Flutter Разработчик,",
+        "Системный и Социальный Дизайнер",
+      ],
+      en: [
+        "Front End Developer,",
+        "Flutter Developer,",
+        "System and Social Designer",
+      ],
     },
     company: {
-      ru: "«Meta Vocobulary»",
-      en: "«Meta Vocobulary»",
+      ru: "«Meta Language»",
+      en: "«Meta Language»",
     },
     period: {
       ru: "Ноябрь 2022 - Настоящее время",
@@ -148,8 +144,8 @@ const jobHistory = [
   },
   {
     position: {
-      ru: "Технический Директор (CTO)",
-      en: "Chief Technology Officer (CTO)",
+      ru: ["Технический Директор (CTO)"],
+      en: ["Chief Technology Officer (CTO)"],
     },
     company: {
       ru: "«Павличенко» ООО",
@@ -175,8 +171,8 @@ const jobHistory = [
   },
   {
     position: {
-      ru: "Технический Директор (CTO), IT-Инженер",
-      en: "Chief Technology Officer (CTO), IT-Engineer",
+      ru: ["Технический Директор (CTO),", "IT-Инженер"],
+      en: ["Chief Technology Officer (CTO), ", "IT-Engineer"],
     },
     company: {
       ru: "«Мидгалэль» ООО",
