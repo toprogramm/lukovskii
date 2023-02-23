@@ -21,9 +21,9 @@ html {
 .read-the-docs {
   color: #888;
 }
-.ContactBox{
+.ContactBox {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap:8px;
+  gap: 8px;
 }
