@@ -52,7 +52,7 @@ const ScrollUp = () => {
 
   return (
     <div
-      className={"ScrollUp hide"}
+      className={"ScrollUp"}
       onClick={() => {
         ScrollTop("header");
       }}
