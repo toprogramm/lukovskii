@@ -1,7 +1,7 @@
 export const contactData = {
   linkedIn: {
     name: "linkedIn",
-    link: "https://www.linkedin.com/in/ivan-lukovskii-2a5141244/",
+    link: "https://www.linkedin.com/in/one-lukovskii-2a5141244/",
     svg: (
       <>
         <svg

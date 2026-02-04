@@ -45,3 +45,6 @@ button::-moz-focus-inner {
 a:focus {
   outline: none;
 }
+strong {
+  font-weight: bold;
+}

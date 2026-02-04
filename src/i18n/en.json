@@ -38,8 +38,8 @@
   },
   "aboutMe": {
     "title": "About Me",
-    "paragraph1": "3 years of experience in Software Engineering.<br/>Skilled in HTML, CSS, JavaScript, TypeScript, React, Redux, Vue, NodeJS.<br/>Strong understanding of web standards and user experience. Proven track record of delivering high-quality, responsive websites and web applications. Skills in Python and Flutter are moderately medium.",
-    "paragraph2": "7+ years of experience in Technological Management.<br/>Skilled in software development, team management, and strategic planning. Strong understanding of current technologies and trends in software development. Proven track record of delivering high-quality, scalable software solutions."
+    "paragraph1": "3 years of experience in <strong>Software Engineering.</strong><br/>Skilled in <strong>HTML, CSS, JavaScript, TypeScript, React, Redux, Vue, NodeJS.</strong><br/>Strong understanding of web standards and user experience. Proven track record of delivering high-quality, responsive websites and web applications. Skills in Python and Flutter are moderately medium.",
+    "paragraph2": "7+ years of experience in <strong>Technological Management.</strong><br/>Skilled in software development, team management, and strategic planning. Strong understanding of current technologies and trends in software development. Proven track record of delivering high-quality, scalable software solutions."
   },
   "experience": {
     "title": "Experience",
@@ -79,7 +79,7 @@
       "position": [
         "Software Engineer,",
         "Flutter Developer,",
-        "System and Social Designer"
+        "System Designer"
       ],
       "company": "«Meta Language»",
       "period": "November 2022 - Present",
