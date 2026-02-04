@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { useNavigate, useLocation } from "react-router-dom";
 import "./LanguageToggle.scss";
 
 const languages = [
@@ -9,6 +10,8 @@ const languages = [
 
 const LanguageToggle = () => {
   const { i18n } = useTranslation();
+  const navigate = useNavigate();
+  const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
@@ -16,7 +19,9 @@ const LanguageToggle = () => {
   const currentLabel = languages.find((l) => l.code === currentLang)?.label || "EN";
 
   const handleSelect = (code: string) => {
-    i18n.changeLanguage(code);
+    const hash = location.hash;
+    const targetPath = code === "ru" ? "/ru" : "/";
+    navigate(targetPath + hash);
     setIsOpen(false);
   };
 

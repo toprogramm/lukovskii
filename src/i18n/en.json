@@ -1,4 +1,8 @@
 {
+  "meta": {
+    "title": "LUKOVSKii - Personal Webpage",
+    "description": "Personal webpage of Ivan Lukovskii, a Software Engineer skilled in React, TypeScript, JavaScript, and more. View experience, skills, and contact information."
+  },
   "header": {
     "linkCopied": "Link Copied 🙂"
   },
