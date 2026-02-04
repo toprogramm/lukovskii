@@ -1,19 +1,7 @@
-import { text } from "stream/consumers";
 import "./Header.scss";
-// rotate 3d https://sitehere.ru/3d-preobrazovaniya-i-animacii
-const BURGER_SVG = (
-  <svg
-    width="19"
-    height="15"
-    viewBox="0 0 19 15"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-  >
-    <line y1="1" x2="19" y2="1" stroke="#035C2C" stroke-width="2" />
-    <line y1="6.33337" x2="19" y2="6.33337" stroke="#035C2C" stroke-width="2" />
-    <line y1="12" x2="19" y2="12" stroke="#035C2C" stroke-width="2" />
-  </svg>
-);
+import { useTranslation } from "react-i18next";
+import LanguageToggle from "../LanguageToggle/LanguageToggle";
+
 const SHARE_SVG = (
   <svg
     height="24px"
@@ -35,18 +23,22 @@ const SHARE_SVG = (
     </g>
   </svg>
 );
-async function copyCode(link: string) {
-  try {
-    await navigator.clipboard.writeText(link);
-    alert("Link Copied 🙂");
-  } catch (e) {
-    console.log(e);
-  }
-}
+
 function Header() {
+  const { t } = useTranslation();
+
+  async function copyCode(link: string) {
+    try {
+      await navigator.clipboard.writeText(link);
+      alert(t("header.linkCopied"));
+    } catch (e) {
+      console.log(e);
+    }
+  }
+
   return (
-    <div id="header" className="Header">
-      <div style={{opacity:0}}>{BURGER_SVG}</div>
+    <header id="header" className="Header">
+      <LanguageToggle />
       <div className="Header__name">LUKOVSKii</div>
       <a
         id="copy"
@@ -57,7 +49,7 @@ function Header() {
       >
         {SHARE_SVG}
       </a>
-    </div>
+    </header>
   );
 }
 export default Header;

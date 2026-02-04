@@ -1,9 +1,13 @@
 import "./Footer.scss";
+import { useTranslation } from "react-i18next";
+
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
-    <div className="Footer whiteText">
-      by LUKOVSKii
-          </div>
+    <footer className="Footer whiteText">
+      {t("footer.text")}
+    </footer>
   );
 };
 export default Footer;

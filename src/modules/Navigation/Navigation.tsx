@@ -1,12 +1,15 @@
 import "./Navigation.scss";
+import { useTranslation } from "react-i18next";
 import Button from "../Button/Button";
 import { ColorVariant } from "../Button/Button";
 import { ShadowVariant } from "../Button/Button";
 import { ScrollCenter, ScrollTop } from "../Scroll/Scroll";
 
 const Navigation = () => {
+  const { t } = useTranslation();
+
   return (
-    <div className="Navigation">
+    <nav className="Navigation">
       <div className="Navigation__box">
         <Button
           onClick={() => {
@@ -15,7 +18,7 @@ const Navigation = () => {
           colorVariant={ColorVariant.usual}
           shadowVariant={ShadowVariant.none}
         >
-          <h5>About me</h5>
+          <h5>{t("nav.aboutMe")}</h5>
         </Button>
         <Button
           onClick={() => {
@@ -24,7 +27,7 @@ const Navigation = () => {
           colorVariant={ColorVariant.usual}
           shadowVariant={ShadowVariant.none}
         >
-          <h5>Experience</h5>
+          <h5>{t("nav.experience")}</h5>
         </Button>
         <Button
           onClick={() => {
@@ -33,10 +36,10 @@ const Navigation = () => {
           colorVariant={ColorVariant.usual}
           shadowVariant={ShadowVariant.none}
         >
-          <h5>Services</h5>
+          <h5>{t("nav.services")}</h5>
         </Button>
       </div>
-    </div>
+    </nav>
   );
 };
 export default Navigation;

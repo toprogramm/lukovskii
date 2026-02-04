@@ -1,8 +1,7 @@
 import { contactData } from "./ContactsData";
-
+import { useTranslation } from "react-i18next";
 import ContentBox from "../ContentBox/ContentBox";
 import { OrientationVariant } from "../ContentBox/ContentBox";
-import { FC } from "react";
 
 import "./Contacts.scss";
 const WHATSAPP_SWG = (
@@ -44,12 +43,14 @@ const EMAIL_SVG = (
   </svg>
 );
 const Contacts = () => {
+  const { t } = useTranslation();
+
   return (
     <div id="Contacts" className="Contacts">
       <ContentBox orientationVariant={OrientationVariant.other}>
         <div className="Contacts__pad">
           <h3 className="Contacts__name greenText smallPadding">
-            <b>My Contacts</b>
+            <b>{t("contacts.title")}</b>
           </h3>
           <div className="Contacts__picturePlusInfo">
             <div>{WHATSAPP_SWG}</div>
@@ -73,6 +74,7 @@ const Contacts = () => {
           <div className="Contacts__iconBoard">
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href={contactData.facebook.link}
               className="Contacts__contactIcon"
             >
@@ -80,6 +82,7 @@ const Contacts = () => {
             </a>
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href={contactData.linkedIn.link}
               className="Contacts__contactIcon"
             >
@@ -88,6 +91,7 @@ const Contacts = () => {
 
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href={contactData.telegram.link}
               className="Contacts__contactIcon"
             >
@@ -95,6 +99,7 @@ const Contacts = () => {
             </a>
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href={contactData.whatsapp.link}
               className="Contacts__contactIcon"
             >
@@ -102,6 +107,7 @@ const Contacts = () => {
             </a>
             <a
               target="_blank"
+              rel="noopener noreferrer"
               href={contactData.github.link}
               className="Contacts__contactIcon"
             >

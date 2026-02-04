@@ -2,7 +2,6 @@ import React, { MouseEvent } from "react";
 import { FC } from "react";
 import "./Button.scss";
 import { forwardRef } from "react";
-import { Container } from "react-dom";
 
 export enum ColorVariant {
   usual = "usual",

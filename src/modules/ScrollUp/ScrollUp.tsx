@@ -23,7 +23,7 @@ const ScrollUpIcon = (
 const ScrollUp = () => {
   
   const name = "ScrollUp";
-  function bla() {
+  function initScrollListener() {
     const PageScrollUp = document.querySelector<HTMLElement>(
       `.${name}`
     ) as Element | null;
@@ -48,7 +48,7 @@ const ScrollUp = () => {
       lastScroll = scrollPosition();
     });
   }
-  window.onload = bla;
+  window.onload = initScrollListener;
 
   return (
     <div

@@ -1,0 +1,127 @@
+{
+  "header": {
+    "linkCopied": "Link Copied 🙂"
+  },
+  "nav": {
+    "aboutMe": "About me",
+    "experience": "Experience",
+    "services": "Services"
+  },
+  "photo": {
+    "hello": "Hello",
+    "name": "I'm Ivan Lukovskii",
+    "role": "Software Engineer",
+    "hire": "Hire me",
+    "downloadCv": "Download CV"
+  },
+  "skills": {
+    "title": "Skills:",
+    "items": [
+      "JavaScript",
+      "TypeScript",
+      "HTML",
+      "CSS",
+      "React",
+      "Redux",
+      "NodeJs",
+      "VUE",
+      "Python",
+      "Flutter",
+      "Dart",
+      "Analytical skills",
+      "Long Term Planning",
+      "Personnel Management"
+    ]
+  },
+  "contacts": {
+    "title": "My Contacts"
+  },
+  "aboutMe": {
+    "title": "About Me",
+    "paragraph1": "3 years of experience in Software Engineering.<br/>Skilled in HTML, CSS, JavaScript, TypeScript, React, Redux, Vue, NodeJS.<br/>Strong understanding of web standards and user experience. Proven track record of delivering high-quality, responsive websites and web applications. Skills in Python and Flutter are moderately medium.",
+    "paragraph2": "7+ years of experience in Technological Management.<br/>Skilled in software development, team management, and strategic planning. Strong understanding of current technologies and trends in software development. Proven track record of delivering high-quality, scalable software solutions."
+  },
+  "experience": {
+    "title": "Experience",
+    "companyLabel": "Company:"
+  },
+  "jobs": [
+    {
+      "position": ["Software Engineer"],
+      "company": "«Hi Psy» LLC",
+      "period": "January 2021 — July 2021",
+      "achievements": [
+        "Participated in design development and final decision making.",
+        "Created corporate website for this company.",
+        "Chose the optimal technology solution for development."
+      ]
+    },
+    {
+      "position": ["Software Engineer"],
+      "company": "«STRADA»",
+      "period": "January 2022 - December 2022",
+      "achievements": [
+        "Developed some applications or part of them",
+        "Actively helped in QA, and tested platform for studying",
+        "Chose solutions for project"
+      ]
+    },
+    {
+      "position": ["Python Developer"],
+      "company": "«BIP39»",
+      "period": "August 2022 - Present",
+      "achievements": [
+        "Created opensource Offline BIP39 Seed Phrase Generator",
+        "Maintain this product (part time)"
+      ]
+    },
+    {
+      "position": [
+        "Software Engineer,",
+        "Flutter Developer,",
+        "System and Social Designer"
+      ],
+      "company": "«Meta Language»",
+      "period": "November 2022 - Present",
+      "achievements": [
+        "Created Language Platform for Studying language",
+        "Developed unique conception of studying",
+        "Chose develop instrument for project"
+      ]
+    },
+    {
+      "position": ["Chief Technology Officer (CTO)"],
+      "company": "«Pavlichenko» LLC",
+      "period": "February 2017 - Present",
+      "achievements": [
+        "Conducted business analysis and chose effective solutions.",
+        "Reported all necessary information to the Chief Operating Officer and worked closely with them to achieve and maintain goals.",
+        "Organized work-spaces of personnel"
+      ]
+    },
+    {
+      "position": ["Chief Technology Officer (CTO), ", "IT-Engineer"],
+      "company": "«Midgalel» LLC",
+      "period": "January 2013 - January 2017",
+      "achievements": [
+        "Organized work, financial statements and digital communication",
+        "Conducted business analysis and made key decisions",
+        "Solved communication problems within the team"
+      ]
+    }
+  ],
+  "credits": {
+    "title": "Credits",
+    "background": "Free SVG Background by",
+    "bgjar": "BGJar",
+    "imageBy": "Image by",
+    "macrovector": "macrovector",
+    "rawpixel": "rawpixel.com",
+    "onFreepik": "on Freepik",
+    "iconsFrom": "Icons from",
+    "svgRepo": "SVG Repo"
+  },
+  "footer": {
+    "text": "by LUKOVSKii"
+  }
+}

@@ -1,61 +1,27 @@
 import "./Skills.scss";
+import { useTranslation } from "react-i18next";
 import ContentBox from "../../ContentBox/ContentBox";
 import { OrientationVariant } from "../../ContentBox/ContentBox";
-import { userLang } from "../../../App";
 import Button from "../../Button/Button";
 import { ColorVariant } from "../../Button/Button";
 import { ShadowVariant } from "../../Button/Button";
 
-const skills = {
-  name: { ru: "Навыки:", en: "Skills:" },
-  skills: {
-    ru: [
-      "JavaScript",
-      "TypeScript",
-      "HTML",
-      "CSS",
-      "React",
-      "Redux",
-      "NodeJs",
-      "VUE",
-      "Python",
-      "Flutter",
-      "Dart",
-      "Аналитические навыки",
-      "Управление персоналом",
-      "Долгосрочное планирование",
-    ],
-    en: [
-      "JavaScript",
-      "TypeScript",
-      "HTML",
-      "CSS",
-      "React",
-      "Redux",
-      "NodeJs",
-      "VUE",
-      "Python",
-      "Flutter",
-      "Dart",
-      "Analytical skills",
-      "Long Term Planning",
-      "Personnel Management",
-    ],
-  },
-};
 const Skills = () => {
+  const { t } = useTranslation();
+  const items = t("skills.items", { returnObjects: true }) as string[];
+
   return (
     <div className="Skills -ru">
       <ContentBox orientationVariant={OrientationVariant.other}>
         <h3 className=" Skills__name greenText">
-          <b>{skills.name.en}</b>
+          <b>{t("skills.title")}</b>
         </h3>
 
         <div className="Skills__buttons">
           <>
-            {skills.skills.en.map((item) => {
+            {items.map((item, index) => {
               return (
-                <div className="ButtonLimiter">
+                <div className="ButtonLimiter" key={index}>
                   <Button
                     onClick={() => {}}
                     colorVariant={ColorVariant.usual}

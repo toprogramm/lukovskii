@@ -1,7 +1,5 @@
 import "./ContentBox.scss";
 import { FC} from "react";
-const background = "../../../public/background.jpg";
-const background90 = "../../../public/background90.jpg";
 export enum OrientationVariant {
   usual = "usual",
   other = "other",
