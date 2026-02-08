@@ -68,3 +68,46 @@ BrowserRouter + HelmetProvider (main.tsx)
 **Runtime:** react, react-dom, react-router-dom, react-helmet-async, react-i18next, i18next, i18next-browser-languagedetector
 
 **Dev:** typescript, vite, @vitejs/plugin-react, sass, @types/react, @types/react-dom, @types/node
+
+## Hosting & Deployment
+
+This is a Single Page Application (SPA) with client-side routing. The server must redirect all routes to `index.html` so React Router can handle them. Without this, direct navigation to `/ru` will return 404.
+
+### Build
+
+```bash
+npm run build
+```
+
+Upload contents of `dist/` folder to your web root.
+
+### Hosting Configuration
+
+**Apache / Shared Hosting (cPanel, Mirahost, etc.):**
+The `public/.htaccess` file is included in the build. Make sure to upload it (it's hidden). Requires `mod_rewrite` enabled.
+
+```apache
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^ index.html [L]
+</IfModule>
+```
+
+**Nginx:**
+Add to your server block:
+
+```nginx
+location / {
+    try_files $uri $uri/ /index.html;
+}
+```
+
+### Troubleshooting
+
+If `/ru` returns 404:
+1. Verify `.htaccess` was uploaded (hidden file)
+2. Check if `mod_rewrite` is enabled (contact hosting support)
+3. Ensure `AllowOverride All` is set for your directory

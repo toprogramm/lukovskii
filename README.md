@@ -65,9 +65,43 @@ index.html             # HTML template with SEO meta tags
 
 ## Internationalization (i18n)
 
-The site supports English and Russian. Language is auto-detected from the browser on first visit and persisted in localStorage.
+The site supports English (`/`) and Russian (`/ru`) via URL-based routing for SEO.
 
 - Translation files: `src/i18n/en.json` and `src/i18n/ru.json`
 - Configuration: `src/i18n/i18n.ts`
 - Components use the `useTranslation()` hook from react-i18next
 - Language toggle button is in the Header (top-left)
+
+## Hosting
+
+This is a Single Page Application (SPA). The server must redirect all routes to `index.html` for client-side routing to work.
+
+### Apache / Shared Hosting (cPanel, Mirahost, etc.)
+
+Upload contents of `dist/` folder to your `www/` or `public_html/` directory. **Important:** Include the hidden `.htaccess` file.
+
+The `.htaccess` file contains:
+
+```apache
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^ index.html [L]
+</IfModule>
+```
+
+If `/ru` returns 404:
+1. Make sure `.htaccess` was uploaded (enable "show hidden files" in FTP client)
+2. Check if `mod_rewrite` is enabled (contact hosting support)
+
+### Nginx
+
+Add to your server block:
+
+```nginx
+location / {
+    try_files $uri $uri/ /index.html;
+}
+```
